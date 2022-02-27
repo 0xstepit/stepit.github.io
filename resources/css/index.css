@@ -135,21 +135,7 @@ header .nft {
     box-shadow: 2px 2px #00FF82, -2px -2px #FF00B1;
 }
 
-.wrapper {
-    display: flex;
-    margin-top: 3rem;
-}
-
-.wrapper aside {
-    flex: 2;
-}
-
-.wrapper div {
-    flex: 3;
-    text-align: justify;
-}
-
-h1, h2 {
+h1 {
     font-family: "Work Sans";
     font-size: 3rem;
     font-weight: bold;
@@ -162,52 +148,72 @@ h1, h2 {
     line-height: 4rem;
 }
 
-.presentation h2 {
-    margin-bottom: 1rem;;
+/* WRAPPER */
+
+.wrapper {
+    display: flex;
 }
 
-p {
-    line-height: 1.5rem;
+.wrapper aside {
+    flex: 2;
 }
 
-/*
+.wrapper aside.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Work Sans";
+    color: #00FF82;
+}
 
-h1 {
-    font-size: 40px;
+
+.wrapper div {
+    flex: 3;
+    text-align: justify;
 }
 
 h2 {
-    font-size: 33px;
+    font-family: "Work Sans";
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00FF82;
+    text-shadow: 2px 2px #FF00B1;
+    margin-bottom: 2rem;
 }
 
-.presentation {
-    width: 700px;
-    margin: 0 auto;
+p {
+    line-height: 2rem;
+    font-size: 1.2;
 }
 
-#nft {
-    width: 150px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
+/* FOOTER */
 
 footer {
-    margin-top: 100px;
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
 }
 
-div.logo {
-    display: inline-block;
+footer .center {
+    display: flex;
+    justify-content: space-between;
 }
 
-img.logo {
-    width: 30px;
+footer .center div{
+    display: flex;
+    justify-content: center;
 }
 
-.focus {
-    color: mediumspringgreen;
+footer aside {
+    flex: 2;
 }
 
-#bio {
+footer div {
+    flex: 3;
     text-align: justify;
 }
-*/
+
+img.icon {
+    width: 35px;
+}
