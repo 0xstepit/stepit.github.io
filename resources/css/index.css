@@ -79,6 +79,17 @@ body {
     border-width: 0 3px 3px 0;
     padding: 0.5rem;
     transform: rotate(-135deg);
+}
+
+.bottom-arrow {
+    position: absolute;
+    right: 2rem;
+    bottom: 1.5rem;
+    border: solid #00FF82;
+    box-shadow: 2px 2px #FF00B1;
+    border-width: 0 3px 3px 0;
+    padding: 0.5rem;
+    transform: rotate(45deg);
   }
 
 .wagmi {
