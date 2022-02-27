@@ -1,0 +1,213 @@
+/* General style */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131313;
+    font-family: 'Space Mono';
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.fixed-elements {
+    color: #00FF82;
+    text-shadow: 2px 2px #FF00B1;
+}
+
+.navbar {
+    color: #00FF82;
+    text-shadow: 2px 2px #FF00B1;
+    display: flex;
+    height: 3rem;
+}
+
+.nav {
+    flex: 1;
+}
+
+.logo {
+    position: fixed;
+}
+
+.nabla {  
+    font-size: 2.5rem;
+    left: 2rem;
+    top: 0.2rem;
+}
+
+.dot {
+    left: 2.45rem;
+    top: 0.7rem;
+}
+
+.name {
+    left: 3.7rem;
+    top: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.nav.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.navbar ul li{
+    display: inline;
+    letter-spacing: 0.2rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #00FF82;
+    text-shadow: 2px 2px #FF00B1;
+}
+
+.navbar li+li::before{
+    content: "/ ";
+}
+
+/*
+.wormhole {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 50%;
+}
+
+.wormhole img {
+    width: 6rem;
+    height: auto;
+    border-radius: 50%;
+}
+*/
+
+.top-arrow {
+    position: fixed;
+    right: 2rem;
+    bottom: 1.5rem;
+    border: solid #00FF82;
+    box-shadow: 2px 2px #FF00B1;
+    border-width: 0 3px 3px 0;
+    padding: 0.5rem;
+    transform: rotate(-135deg);
+  }
+
+.wagmi {
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+header {
+    display: flex;
+}
+
+header div {
+    flex: 1;
+    gap: 20rem;
+    height: 80vh;
+    margin-bottom: 10rem;
+    justify-content: space-around;
+}
+
+header .hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #00FF82;
+}
+
+header .nft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #FF00B1;
+}
+
+#nft {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 2px 2px #00FF82, -2px -2px #FF00B1;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.wrapper aside {
+    flex: 2;
+}
+
+.wrapper div {
+    flex: 3;
+    text-align: justify;
+}
+
+h1, h2 {
+    font-family: "Work Sans";
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00FF82;
+    text-shadow: 2px 2px #FF00B1;
+}
+
+.hello h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.presentation h2 {
+    margin-bottom: 1rem;;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+/*
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+.presentation {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#nft {
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+div.logo {
+    display: inline-block;
+}
+
+img.logo {
+    width: 30px;
+}
+
+.focus {
+    color: mediumspringgreen;
+}
+
+#bio {
+    text-align: justify;
+}
+*/
