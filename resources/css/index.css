@@ -101,34 +101,39 @@ body {
 
 header {
     display: flex;
-}
-
-header div {
-    gap: 20rem;
-    height: 80vh;
-    margin-bottom: 8rem;
-    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header .hello {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid #00FF82;
-}
-
-header .nft {
     flex: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid #FF00B1;
+    background-image: 
+        linear-gradient(rgba(19, 19, 19, 1), rgba(13, 13, 13, 0), rgba(13, 13, 13, 0), rgba(13, 13, 13, 0), rgba(19, 19, 19, 1)),
+        url('../images/galaxy.jpeg');
+    background-size: cover;
+    /*
+    box-shadow: 
+        inset 0px 15px 10px -4px #131313,
+        inset 0px -15px 10px -4px #131313;
+        */
 }
 
-#nft {
-    width: 80%;
-    border: 0.7rem solid #232323;;
+header .landing.top {
+    flex: 1;
+}
+
+header .landing.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    font-family: "Work Sans";
+    color: #00FF82;
+    word-spacing: 3rem;
+    letter-spacing: 0.5rem;
 }
 
 h1 {
@@ -152,15 +157,14 @@ h1 {
 
 .wrapper aside {
     flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper aside.left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Work Sans";
-    color: #00FF82;
+.wrapper aside.left img{
+    width: 15rem;
+    border-radius: 50%;
 }
 
 
@@ -197,7 +201,7 @@ footer {
 
 footer .center {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 footer .center div{
