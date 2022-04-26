@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
   <title>stepyt</title>
+  <link rel="icon" href="./resources/images/monkey.JPG">
 </head>
 <body>
   <div class="fixed-elements">
@@ -26,7 +27,8 @@
     <div class="nav right">
       <ul>
         <li><a href="#who-am-i">who am I?</a></li>
-        <li><a href="#">articles</a></li>
+        <li><a href="#articles">articles</a></li>
+        <li><a href="#projects">projects</a></li>
       </ul>
     </div>
   </nav>
@@ -36,7 +38,7 @@
       <h1>Hello folks,<br>welcome to my space!</h1>
     </div>
     <div class="landing bottom">
-      <p>Engineering | Machine learning | Blockchain</p>
+      <p>Blockchain | Engineering | <span id="machine-learning">Machine learning</span></p>
     </div>
   </header>
   <div class="wrapper one">
@@ -47,14 +49,13 @@
       <div class="presentation" id="who-am-i">
         <h2>Who am I?</h2>
         <p>
-          I'm an aerospace engineer from Politecnico di Milano with a strong interest in decentralized software and finance.
+          I'm an aerospace engineer.
           <br>
-          After dropping out from a PhD on composite structures data-driven optimization I moved to software development. 
-          As a self-though, I started my journey toward full-stack development with a particular focus on blockchain applications and related topics.
+          After dropping out from a PhD on data-driven composite structures optimization, I moved to software development.
           <br>
-          My passion for math and computer science brought me to study machine learning methods and the application of deep neural networks. I thought that machine is a super interesting topic for people who love math and coding.
+          I develope smart contracts in Rust for the Cosmos ecosystem, but right now, they are more dumb than smart..
           <br>
-          Technology apart, I'm a judo's second dan black belt interested in all kind of sport.        </p>
+          Technology apart, I'm a judo's second dan black belt.</p>
       </div>
     </div>
     <aside class="right">
@@ -66,17 +67,11 @@
     <div class="center">
       <div class="articles" id="articles">
         <h2>Articles</h2>
-        <p>
-          One of the best decisions I made the last time has been to start writing. By writing you can achieve two amazing goals, the first one is building a solid mental map of the topic, and the second one is sharing and helping other people understand topics you like.
-          <br>
-          I have a Medium profile where I regularly write guides and tutorials related to the Blockchain field and technology in general.
-          <br>
-          If you are curious or just wanna dive deep into the blockchain field, I suggest you read my first 3 articles about decentralized finance. 
-        </p>
+        <p>You can check some of my articles related to blockchain and DeFi:</p>
         <div class="articles-cards">
           <a href="https://medium.com/stepyt/guida-alla-defi-introduzione-852883ae6e" target="_black">
             <div class="card one">
-              <h3>Introduzione</h3>
+              <h3>Introduzione alla DeFi</h3>
             </div>
           </a>
           <a href="https://medium.com/terra-network-italia/guida-alla-defi-dex-d7dc415f79a9" target="_black">
@@ -98,24 +93,48 @@
       <p>software developing</p>
     </aside>
   </div>
+  <div class="wrapper three">
+    <aside class="left">
+      <img src="./resources/images/projects/stableswap-dynamic.png" id="stableswap">
+    </aside>
+    <div class="center">
+      <div class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+          <a href="https://github.com/stepyt/automated-market-maker/blob/main/README.md" target="_black">
+            <div class="card one">
+              <h3>Automated Market Maker Models</h3>
+            </div>
+          </a>
+          <a href="https://github.com/stepyt/PyTorch-GANs" target="_black">
+            <div class="card two">
+              <h3>Generative Adversarial Networks</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <aside class="right">
+    </aside>
+  </div>
   <footer id="bottom">
     <aside class="left">
     </aside>
     <div class="center">
         <a href="https://medium.com/@stepyt" target="_blank">
-          <img src="resources/images/icons/medium-icon.png" alt="Medium logo" class="icon">
+          Medium
         </a>
         <a href="https://twitter.com/_stepyt_" target="_blank">
-          <img src="resources/images/icons/twitter-icon.png" alt="Twitter logo" class="icon">
+          Twitter
         </a>
         <a href="https://github.com/stepyt" target="_blank">
-          <img src="resources/images/icons/github-icon.png" alt="GitHub logo" class="icon">
-        </a>
-        <a href="https://www.instagram.com/_stepyt_" target="_blank">
-          <img src="resources/images/icons/instagram-icon.png" alt="Instagram logo" class="icon">
+          GitHub
         </a>
         <a href="https://t.me/ste_pyt" target="_blank">
-          <img src="resources/images/icons/telegram-icon.png" alt="Instagram logo" class="icon">
+          Telegram
+        </a>
+        <a href="mailto: stepyt.crypto@gmail.com" target="_blank">
+          Mail
         </a>
     </div>
     <aside>

@@ -121,6 +121,10 @@ header .landing.bottom {
     letter-spacing: 0.5rem;
 }
 
+#machine-learning {
+    word-spacing: 1rem;
+}
+
 h1 {
     font-family: "Work Sans";
     font-size: 3rem;
@@ -147,7 +151,7 @@ h1 {
     align-items: center;
 }
 
-.wrapper aside.left img{
+.wrapper.one aside.left img{
     width: 9rem;
     border-radius: 50%;
 }
@@ -191,14 +195,15 @@ p {
 
 .articles-cards {
     display: flex;
+    flex-direction: column;
     column-gap: 1rem;
     height: 20rem;
     margin-top: 3rem;
+    row-gap: 2rem;
 }
 
 .articles-cards a{
     display: flex;
-    justify-content: center;
     flex: 1;
     text-decoration: none;
     flex-grow: 1;
@@ -207,7 +212,10 @@ p {
 .articles-cards .card {
     display: flex;
     width: 100%;
+    /*
     box-shadow: 0px 0px 0px 2px #00FF82, 2px 2px 0px 4px #FF00B1;
+    */
+    box-shadow: 0px 0px 0px 2px #181818, 0px 0px 5px 5px #151515;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -217,18 +225,27 @@ p {
 }
 
 .card.one {
+    /*
     background-image: linear-gradient(rgba(19, 19, 19, 0.5), rgba(19, 19, 19, 0.5)), url('../images/articles/introduzione.png');
     background-size: cover;
+    */
+    background-color: #181818;
 }
 
 .card.two {
+    /*
     background-image: linear-gradient(rgba(19, 19, 19, 0.5), rgba(19, 19, 19, 0.5)), url('../images/articles/exchange.png');
     background-size: cover;
+    */
+    background-color: #181818;
 }
 
 .card.three {
+    /*
     background-image: linear-gradient(rgba(19, 19, 19, 0.5), rgba(19, 19, 19, 0.5)), url('../images/articles/prestiti.png');
     background-size: cover;
+    */
+    background-color: #181818;
 }
 
 .card h3 {
@@ -242,59 +259,58 @@ p {
     margin-bottom: 3rem;
 }
 
-/* COLLABORATIONS */
-
-.collaborations-cards {
+/* PROJECTS */
+.project-cards {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    column-gap: 1rem;
+    height: 10rem;
     margin-top: 3rem;
+    row-gap: 2rem;
 }
 
-.collaborations-cards a{
+.project-cards a{
     display: flex;
-    justify-content: center;
     flex: 1;
-    height: 20rem;
     text-decoration: none;
-    flex-grow: 1;
+}
+
+.project-cards .card {
+    display: flex;
+    width: 100%;
+    /*
     box-shadow: 0px 0px 0px 2px #00FF82, 2px 2px 0px 4px #FF00B1;
+    */
+    box-shadow: 0px 0px 0px 2px #181818, 0px 0px 5px 5px #151515;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     border-radius: 0.5rem;
+    font-family: "Work Sans";
+    text-align: center;
+    height: 5rem;
 }
 
-.collaborations-cards a div {
-    height: 20rem;
+.project-cards .card h3 {
+    text-align: center;
+    flex-grow: 2;
 }
 
-.collaborations-cards a .collaboration {
-    flex: 1; 
-    height: 20rem;
-
+.wrapper.three aside.left img{
+    width: 18rem;
 }
 
-.collaborations-cards a .TNI {
-    flex: 3; 
-    height: 20rem;
+.wrapper.three {
+    margin-bottom: 3rem;
 }
 
-
-.TNI {
-    background-image: url('../images/groups/tni.png');
-    background-size: 20rem;
-    background-repeat: no-repeat;
-}
-
-.Decrypted {
-    background-image: url('../images/groups/decrypted.png');
-    background-size: 20rem;
-    background-repeat: no-repeat;
-}
 /* FOOTER */
 
 footer {
     display: flex;
     margin-top: 10rem;
     margin-bottom: 1rem;
+    margin-bottom: 2rem;;
 }
 
 footer .center {
@@ -302,9 +318,12 @@ footer .center {
     justify-content: space-around;
 }
 
-footer .center div{
+footer .center a{
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: #00FF82;
+    text-shadow: 2px 2px #FF00B1;
 }
 
 footer aside {
@@ -316,7 +335,24 @@ footer div {
     text-align: justify;
 }
 
-img.icon {
-    width: 35px;
-    box-shadow: 0px 0px 0px 2px #00FF82,
+@media only screen and (max-width: 550px) {
+.navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    display: block;
+    letter-spacing: 0.2rem;
+    margin: 0;
+}
+
+.navbar li+li::before{
+    content: "";
+}
+
+.namem {
+    margin: 0;
+}
 }
