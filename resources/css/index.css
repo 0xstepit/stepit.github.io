@@ -27,25 +27,10 @@ body {
     flex: 1;
 }
 
-.logo {
-    position: fixed;
-}
-
-.nabla {  
-    font-size: 2.5rem;
-    left: 2rem;
-    top: 0.2rem;
-}
-
-.dot {
-    left: 2.45rem;
-    top: 0.7rem;
-}
-
 .name {
-    left: 3.7rem;
-    top: 1rem;
-    letter-spacing: 0.2rem;
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .nav.right {
@@ -222,7 +207,7 @@ p {
 .articles-cards .card {
     display: flex;
     width: 100%;
-    box-shadow: -2px -2px #00FF82, 2px 2px #FF00B1;
+    box-shadow: 0px 0px 0px 2px #00FF82, 2px 2px 0px 4px #FF00B1;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -257,6 +242,53 @@ p {
     margin-bottom: 3rem;
 }
 
+/* COLLABORATIONS */
+
+.collaborations-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 3rem;
+}
+
+.collaborations-cards a{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    height: 20rem;
+    text-decoration: none;
+    flex-grow: 1;
+    box-shadow: 0px 0px 0px 2px #00FF82, 2px 2px 0px 4px #FF00B1;
+    border-radius: 0.5rem;
+}
+
+.collaborations-cards a div {
+    height: 20rem;
+}
+
+.collaborations-cards a .collaboration {
+    flex: 1; 
+    height: 20rem;
+
+}
+
+.collaborations-cards a .TNI {
+    flex: 3; 
+    height: 20rem;
+}
+
+
+.TNI {
+    background-image: url('../images/groups/tni.png');
+    background-size: 20rem;
+    background-repeat: no-repeat;
+}
+
+.Decrypted {
+    background-image: url('../images/groups/decrypted.png');
+    background-size: 20rem;
+    background-repeat: no-repeat;
+}
 /* FOOTER */
 
 footer {
@@ -286,4 +318,5 @@ footer div {
 
 img.icon {
     width: 35px;
+    box-shadow: 0px 0px 0px 2px #00FF82,
 }
