@@ -304,6 +304,11 @@ p {
     margin-bottom: 3rem;
 }
 
+.wrapper .card:hover {
+    cursor: pointer;
+    box-shadow: 2px 3px 2px 0px #00FF82, -2px 3px 2px 0px #00FF82;
+    text-decoration: none;
+}
 /* FOOTER */
 
 footer {
