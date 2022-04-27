@@ -408,7 +408,7 @@ footer div {
         width: 9rem;
         border-radius: 50%;
         display: flex;
-        margin: 2rem auto;
+        margin: 4rem auto;
     }
 }
 
@@ -453,7 +453,7 @@ footer div {
     }
     
     .hello h1 {
-        line-height: 3rem;
+        line-height: 2.5rem;
     }
 
     .card h3 {
@@ -487,7 +487,7 @@ footer div {
     }
     
     .hello h1 {
-        line-height: 3rem;
+        line-height: 2rem;
     }
 
     h2 {
