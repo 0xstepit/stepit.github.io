@@ -310,7 +310,7 @@ aside {
 
 .wrapper .card:hover {
     cursor: pointer;
-    box-shadow: 2px 3px 2px 0px #00FF82, -2px 3px 2px 0px #00FF82;
+    border: 1px solid #00FF82;
     text-decoration: none;
 }
 /* FOOTER */
@@ -408,7 +408,7 @@ footer div {
         width: 9rem;
         border-radius: 50%;
         display: flex;
-        margin: 4rem auto;
+        margin: 3.5rem auto;
     }
 }
 
@@ -488,6 +488,24 @@ footer div {
     
     .hello h1 {
         line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hello h1 {
+        line-height: 1.8rem;
     }
 
     h2 {
