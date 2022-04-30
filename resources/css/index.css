@@ -135,9 +135,6 @@ h1 {
     font-weight: bold;
     color: #00FF82;
     text-shadow: 2px 2px #FF00B1;
-}
-
-.hello h1 {
     line-height: 4rem;
 }
 
@@ -148,6 +145,14 @@ h2 {
     color: #00FF82;
     text-shadow: 2px 2px #FF00B1;
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Work Sans";
+    font-size: 1.3rem;
+    color: white;
+    opacity: none;
 }
 
 p {
@@ -155,13 +160,7 @@ p {
     font-size: 1.2;
 }
 
-#monkey {
-    width: 9rem;
-    border-radius: 50%;
-    display: none;
-}
-
-/* WRAPPER */
+/* WRAPPER GENERAL */
 
 .wrapper {
     display: flex;
@@ -170,13 +169,9 @@ p {
 aside {
     flex: 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.wrapper.one aside.left img {
-    width: 9rem;
-    border-radius: 50%;
 }
 
 .wrapper div {
@@ -184,111 +179,31 @@ aside {
     text-align: justify;
 }
 
-.wrapper.one {
-    margin-bottom: 3rem;
+.wrapper {
+    margin-bottom: 5rem;
 }
 
-/* ARTICLES */
-
-.wrapper.two aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.wrapper.two aside p {
+aside p {
     font-family: "Work Sans";
     color: #00FF82;
 }
 
-.articles-cards {
+.cards {
     display: flex;
     flex-direction: column;
-    column-gap: 1rem;
-    height: 20rem;
-    margin-top: 3rem;
     row-gap: 2rem;
 }
 
-.articles-cards a{
+.cards a {
     display: flex;
     flex: 1;
-    text-decoration: none;
     flex-grow: 1;
-}
-
-.articles-cards .card {
-    display: flex;
-    width: 100%;
-    /*
-    box-shadow: 0px 0px 0px 2px #00FF82, 2px 2px 0px 4px #FF00B1;
-    */
-    box-shadow: 0px 0px 0px 2px #181818, 0px 0px 5px 5px #151515;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 0.5rem;
-    font-family: "Work Sans";
-    text-align: center;
-}
-
-.card.one {
-    /*
-    background-image: linear-gradient(rgba(19, 19, 19, 0.5), rgba(19, 19, 19, 0.5)), url('../images/articles/introduzione.png');
-    background-size: cover;
-    */
-    background-color: #181818;
-}
-
-.card.two {
-    /*
-    background-image: linear-gradient(rgba(19, 19, 19, 0.5), rgba(19, 19, 19, 0.5)), url('../images/articles/exchange.png');
-    background-size: cover;
-    */
-    background-color: #181818;
-}
-
-.card.three {
-    /*
-    background-image: linear-gradient(rgba(19, 19, 19, 0.5), rgba(19, 19, 19, 0.5)), url('../images/articles/prestiti.png');
-    background-size: cover;
-    */
-    background-color: #181818;
-}
-
-.card h3 {
-    color: white;
-    opacity: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.wrapper.two {
-    margin-bottom: 3rem;
-}
-
-/* PROJECTS */
-.project-cards {
-    display: flex;
-    flex-direction: column;
-    column-gap: 1rem;
-    height: 10rem;
-    margin-top: 3rem;
-    row-gap: 2rem;
-}
-
-.project-cards a{
-    display: flex;
-    flex: 1;
     text-decoration: none;
 }
 
-.project-cards .card {
+.card {
     display: flex;
-    width: 100%;
-    /*
-    box-shadow: 0px 0px 0px 2px #00FF82, 2px 2px 0px 4px #FF00B1;
-    */
+    background-color: #181818;
     box-shadow: 0px 0px 0px 2px #181818, 0px 0px 5px 5px #151515;
     justify-content: center;
     align-items: center;
@@ -297,22 +212,44 @@ aside {
     font-family: "Work Sans";
     text-align: center;
     height: 5rem;
+    /*
+    background-image: linear-gradient(rgba(19, 19, 19, 0.5), rgba(19, 19, 19, 0.5)), url('../images/articles/introduzione.png');
+    background-size: cover;
+    */
 }
 
-.project-cards .card h3 {
-    text-align: center;
-    flex-grow: 2;
+.card.one {
+    margin-top: 2rem;
 }
 
-.wrapper.three aside.left img{
-    width: 18rem;
-}
-
-.wrapper .card:hover {
+.card:hover {
     cursor: pointer;
     border: 1px solid #00FF82;
     text-decoration: none;
 }
+
+/* WRAPPER ONE - PRESENTATION */
+
+#monkey-top  {
+    width: 9rem;
+    border-radius: 50%;
+    display: none;
+}
+
+#monkey-left {
+    width: 9rem;
+    border-radius: 50%;
+}
+
+/* WRAPPER TWO - ARTICLES */
+
+
+/* PROJECTS */
+
+#stableswap {
+    width: 18rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -404,7 +341,7 @@ footer div {
         gap: 1rem;
     }
 
-    #monkey {
+    #monkey-top {
         width: 9rem;
         border-radius: 50%;
         display: flex;
