@@ -254,7 +254,7 @@ aside p {
 
 footer {
     display: flex;
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin-bottom: 1rem;
     margin-bottom: 2rem;;
 }
@@ -279,6 +279,16 @@ footer aside {
 footer div {
     flex: 3;
     text-align: justify;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.made-with {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 890px) {
