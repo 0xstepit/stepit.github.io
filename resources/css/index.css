@@ -237,6 +237,16 @@ aside p {
     border-radius: 50%;
 }
 
+#itas {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#itas:hover {
+    cursor: pointer;
+    color: #00FF82;
+    text-decoration: none;
+}
 /* WRAPPER TWO - ARTICLES */
 
 
