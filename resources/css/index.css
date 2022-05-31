@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #131313;
+    background-color: #111111;
     font-family: 'Space Mono';
     font-size: 16px;
     color: whitesmoke;
@@ -100,14 +100,10 @@ header .hello {
     justify-content: center;
     align-items: center;
     background-image: 
-        linear-gradient(rgba(19, 19, 19, 1), rgba(13, 13, 13, 0), rgba(13, 13, 13, 0), rgba(13, 13, 13, 0), rgba(19, 19, 19, 1)),
-        url('../images/galaxy.jpeg');
+        linear-gradient(to top, transparent, 80%, #111111),
+        linear-gradient(to bottom, transparent, 80%, #111111),        
+        url('../images/galaxy2.jpeg');
     background-size: cover;
-    /*
-    box-shadow: 
-        inset 0px 15px 10px -4px #131313,
-        inset 0px -15px 10px -4px #131313;
-    */
 }
 
 header .landing.top {
