@@ -212,6 +212,7 @@ aside p {
     border-radius: 0.5rem;
     font-family: "Work Sans";
     height: 5rem;
+    width: 100%;
 }
 
 .card:hover {
