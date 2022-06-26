@@ -201,6 +201,7 @@ aside p {
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
+    
 }
 
 .card {
@@ -217,8 +218,9 @@ aside p {
 
 .card:hover {
     cursor: pointer;
-    border: 1px solid #00FF82;
     text-decoration: none;
+    transform: scale(1.05);
+    transition: all 300ms ease-in-out;
 }
 
 /* WRAPPER ONE - PRESENTATION */
